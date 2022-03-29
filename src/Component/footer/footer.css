@@ -1,0 +1,13 @@
+.footer {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 2640px;
+    width: 1440px;
+    height: 258px;
+    bottom: 0%;
+
+    /* colors/black/12 */
+
+    background: #1A181E;
+}
