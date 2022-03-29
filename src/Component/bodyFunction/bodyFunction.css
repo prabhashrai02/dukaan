@@ -1,0 +1,12 @@
+.bodyfunction {
+    position: absolute;
+    width: 1440px;
+    height: 332px;
+    left: 0px;
+    top: 1644px;
+
+    /* colors/primary/blue */
+
+    background: #146EB4;
+    opacity: 0.05;
+}
