@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import './homePage.css';
 import Bodyfunction from "../bodyFunction/bodyFunction";
 import Contentbody from "../contentBody/contentBody";
 import Maincontent from "../mainContent/mainContent";
@@ -6,12 +6,12 @@ import Navbar from "../navBar/navbar";
 
 const Homepage = () => {
     return (
-        <Fragment>
+        <div className="homepage">
             <Navbar />
             <Contentbody />
             <Maincontent />
             <Bodyfunction />
-        </Fragment>
+        </div>
     )
 }
 
