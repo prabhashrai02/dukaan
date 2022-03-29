@@ -1,7 +1,9 @@
+import './mainContent.css';
+
 const Maincontent = () => {
     return (
-        <div>
-        </div>
+            <div className="maincontent">
+            </div>
     )
 }
 

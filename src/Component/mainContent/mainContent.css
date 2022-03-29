@@ -1,0 +1,15 @@
+.maincontent {
+    position: absolute;
+    width: 1120px;
+    height: 1430px;
+    left: 160px;
+    top: 134px;
+
+    /* colors/black/100 */
+
+    background: #FFFFFF;
+    /* shadows/card */
+
+    box-shadow: 0px 2px 8px rgba(26, 24, 30, 0.06);
+    border-radius: 8px;
+}
