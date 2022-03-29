@@ -1,7 +1,6 @@
 const Maincontent = () => {
     return (
         <div>
-            aa gya
         </div>
     )
 }

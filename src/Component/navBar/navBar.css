@@ -1,0 +1,66 @@
+.navbar {
+    /* Rectangle 20 */
+    position: absolute;
+    width: 1440px;
+    height: 328px;
+    left: 0px;
+    top: 0px;
+
+    /* colors/primary/blue */
+    background: #146EB4;
+}
+
+.logo {
+    display: flex;  
+    position: absolute;
+    width: 156px;
+    height: 44px;
+    left: 160px;
+    top: 23px;  
+}
+
+.dukaan_name {
+    color: #FFFFFF;
+}
+
+.signin {
+    position: absolute;
+    height: 26px;
+    left: 1011px;
+    top: 32px;
+
+    border: 0;
+    background-color: #146EB4;
+    
+    /* Body/Big|Regular */
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* colors/black/100 */
+    color: #FFFFFF;
+}
+
+.dukaan_pc {
+    position: absolute;
+    width: 177px;
+    height: 50px;
+    left: 1103px;
+    top: 20px;
+    
+    /* colors/black/100 */
+    background: #FFFFFF;
+    border-radius: 4px;
+
+    /* Body/Big|Medium */
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    
+    /* colors/primary/blue */
+    color: #146EB4;
+}
