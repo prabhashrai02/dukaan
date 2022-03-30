@@ -1,9 +1,10 @@
 ul {
     display: flex;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     list-style-type: none;
 }
 
 ul>li {
     margin: 0 10px;
+    cursor: pointer;
 }

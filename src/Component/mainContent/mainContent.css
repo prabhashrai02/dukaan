@@ -130,3 +130,17 @@
     border-radius: 4px;
     height: 60px;
 }
+
+.maincontent_pagination {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    height: 40px;
+}
+
+.maincontent_pagination > Button {
+    cursor: pointer;
+    color: #146EB4;
+    background-color: transparent;
+    border: 0;
+}

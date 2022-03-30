@@ -27,14 +27,22 @@ const Maincontent = () => {
         "coziness building for tomorrow",
         "socond",
     ]
-
+    
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
 
+    const lastPage = Math.ceil(slogan.length / postsPerPage);
+    
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const currentPosts = slogan.slice(indexOfFirstPost, indexOfLastPost);
     const paginate = pageNumber => setCurrentPage(pageNumber);
+    
+    const nextpage = () => {
+        (currentPage < lastPage) ? 
+        setCurrentPage(currentPage+1) : 
+        setCurrentPage(currentPage);
+    }
 
     return (
         <div className="maincontent">
@@ -58,14 +66,17 @@ const Maincontent = () => {
                             <li key={index} className="maincontent_data">
                                 {data}
                             </li>
-
-                    )}
+                        )
+                    }
                 </div>
-                <Pagination
-                    postsPerPage={postsPerPage}
-                    totalPosts={slogan.length}
-                    paginate={paginate}
-                />
+                <div className='maincontent_pagination'>
+                    <Pagination
+                        postsPerPage={postsPerPage}
+                        totalPosts={slogan.length}
+                        paginate={paginate}
+                    />
+                    <Button onClick={nextpage}>Next &gt;</Button>
+                </div>
             </div>
         </div>
     )
