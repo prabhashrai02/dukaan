@@ -1,0 +1,75 @@
+.otherproduct {
+    /* width: 1140px; */
+    /* margin: 0 auto; */
+}
+
+.other_product {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap:wrap; */
+    /* justify-content: space-around; */
+}
+
+.other_product_each {
+    margin: auto auto;
+}
+
+.otherproduct_head {
+    margin: 20px 20px;
+    /* Office culture */
+    position: relative;
+    height: 42px;
+    /* top: 2056px; */
+
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+
+    /* identical to box height, or 117% */
+    letter-spacing: -0.04em;
+
+    /* colors/black/12 */
+    color: #1A181E;
+}
+
+.other_product_privacy {
+    position: relative;
+    /* left: 160px; */
+}
+
+.other_product_head {
+    position: relative;
+    /* width: 244px;
+    height: 28px; */
+    /* left: 160px; */
+
+/* Heading/H5|Medium */
+
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+
+/* colors/black/12 */
+    color: #1A181E;
+}
+
+.other_product_description{
+    position: relative;
+    width: 352px;
+    /* height: 72px; */
+    /* left: 160px; */
+    
+    /* Body/Default|Regular */
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    /* colors/black/30 */
+    color: #4D4D4D;
+}
