@@ -60,15 +60,25 @@ const Maincontent = () => {
                 <br />
                 <Button className="maincontent_generate_button">Generate slogans</Button>
                 <div className="maincontent_line"></div>
+                <br />
+                <div className='maincontent_search_result'>
+                    <div className='search_result'>
+                        We have generated {slogan.length} slogans for "text"
+                    </div>
+                    <Button>Download</Button>
+                </div>
+                <br />
                 <div className="maincontent_data_box">
                     {
                         currentPosts.map((data, index) =>
-                            <li key={index} className="maincontent_data">
+                        <li key={index} className="maincontent_data">
                                 {data}
                             </li>
                         )
                     }
                 </div>
+                <br />
+                    <div className="maincontent_line"></div>
                 <div className='maincontent_pagination'>
                     <Pagination
                         postsPerPage={postsPerPage}
@@ -77,6 +87,7 @@ const Maincontent = () => {
                     />
                     <Button onClick={nextpage}>Next &gt;</Button>
                 </div>
+                <br />
             </div>
         </div>
     )
