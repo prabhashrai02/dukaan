@@ -4,6 +4,7 @@ import Contentbody from "../contentBody/contentBody";
 import Maincontent from "../mainContent/mainContent";
 import Navbar from "../navBar/navbar";
 import Footer from '../footer/footer';
+import Otherproduct from '../otherProduct/otherProduct';
 
 const Homepage = () => {
     return (
@@ -12,6 +13,7 @@ const Homepage = () => {
             <Contentbody />
             <Maincontent />
             <Bodyfunction />
+            <Otherproduct />
             <Footer />
         </div>
     )
