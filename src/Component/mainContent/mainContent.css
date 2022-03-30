@@ -1,9 +1,11 @@
 .maincontent {
-    position: absolute;
+    position: relative;
     width: 80%;
     /* max-height: 1400px; */
     left: 10%;
-    top: 30%;
+    z-index: 5;
+    top: -30vh;
+    margin-bottom: -25vh;
     /* top: 134px; */
     padding-top: 2%;
     
