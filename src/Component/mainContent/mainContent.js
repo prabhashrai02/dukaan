@@ -17,6 +17,7 @@ const Maincontent = () => {
                 <input type="text" className="maincontent_searchbox"/>
                 <br/>
                 <Button className="maincontent_generate_button">Generate slogans</Button>
+                <div className="maincontent_line"></div>
             </div>
         </div>
     )
