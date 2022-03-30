@@ -44,6 +44,10 @@ const Maincontent = () => {
         setCurrentPage(currentPage);
     }
 
+    const copy = (data) =>  {
+        navigator.clipboard.writeText(data);
+    }
+
     return (
         <div className="maincontent">
             <div className="maincontent_body">
@@ -71,7 +75,7 @@ const Maincontent = () => {
                 <div className="maincontent_data_box">
                     {
                         currentPosts.map((data, index) =>
-                        <li key={index} className="maincontent_data">
+                        <li key={index} onClick={()=>copy(data)} className="maincontent_data">
                                 {data}
                             </li>
                         )

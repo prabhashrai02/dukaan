@@ -164,6 +164,7 @@
 }
 
 .maincontent_data {
+    cursor: pointer;
     border-radius: 4px;
     width: max-content;
     display: flex;
