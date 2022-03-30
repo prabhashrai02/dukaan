@@ -1,7 +1,7 @@
 .maincontent {
     position: absolute;
     width: 80%;
-    max-height: 1400px;
+    /* max-height: 1400px; */
     left: 10%;
     top: 30%;
     /* top: 134px; */
