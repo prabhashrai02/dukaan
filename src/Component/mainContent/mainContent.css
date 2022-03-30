@@ -13,3 +13,92 @@
     box-shadow: 0px 2px 8px rgba(26, 24, 30, 0.06);
     border-radius: 8px;
 }
+
+.maincontent_body {
+    position: relative;
+    left: 10%;
+    top: 2%;
+    width: 80%;
+}
+
+.maincontent_heading {
+    position: relative;
+    height: 42px;
+    
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    /* identical to box height, or 117% */
+
+    letter-spacing: -0.04em;
+
+    color: #1A181E;
+}
+
+.maincontent_text {
+    /* Heading/H5|Regular */
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+
+    /* colors/black/30 */
+    color: #4D4D4D;
+    margin-bottom: 20px;
+}
+
+.maincontent_Search_heading {
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* colors/black/30 */
+
+    color: #4D4D4D;
+}
+
+.maincontent_searchbox {
+    position: relative;
+    width: 40%;
+    height: 48px;
+    font-size: larger;
+
+    /* colors/black/85 */
+
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.maincontent_generate_button {
+    cursor: pointer;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 24px;
+
+    position: relative;
+    margin: 20px 0;
+    height: 50px;
+    
+    /* colors/primary/blue */
+
+    background: #146EB4;
+    border-radius: 4px;
+
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
