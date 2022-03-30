@@ -1,4 +1,7 @@
 .bodyfunction {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     position: absolute;
     width: 1440px;
     height: 332px;
@@ -7,6 +10,38 @@
 
     /* colors/primary/blue */
 
-    background: #146EB4;
-    opacity: 0.05;
+    background: rgba(20, 110, 180, 0.05);
+}
+
+.bodyfunction_element {
+    text-align: center;
+}
+
+.bodyfunction_element_head {
+    /* Heading/H5|Medium */
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    /* identical to box height, or 140% */
+    text-align: center;
+
+    /* colors/black/12 */
+    color: #1A181E;
+}
+
+.bodyfunction_element_text {
+    width: 352px;
+    height: 72px;
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+/* colors/black/30 */
+    color: #4D4D4D;
 }
