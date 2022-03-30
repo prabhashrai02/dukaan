@@ -1,11 +1,13 @@
 .bodyfunction {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
-    width: 1440px;
-    height: 332px;
+    width: 100%;
+    height: auto;
     left: 0px;
+    padding: 10px 0px;
     /* top: 1644px; */
 
     /* colors/primary/blue */
