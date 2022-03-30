@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../button/button';
 import Pagination from '../pagination/pagination';
 import './mainContent.css';
@@ -25,43 +25,58 @@ const Maincontent = () => {
         "coziness building for tomorrow",
         "coziness building for tomorrow",
         "coziness building for tomorrow",
-        "socond",
+        "Prabhash"
     ]
     
+    
+    let arr= slogan;
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
-
-    const lastPage = Math.ceil(slogan.length / postsPerPage);
+    
+    const lastPage = Math.ceil(arr.length / postsPerPage);
     
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = slogan.slice(indexOfFirstPost, indexOfLastPost);
+    const currentPosts = arr.slice(indexOfFirstPost, indexOfLastPost);
     const paginate = pageNumber => setCurrentPage(pageNumber);
     
     const [Hover, setHover] = useState(false);
     const [id, setid] = useState('');
-    const [clicked, setclicked]= useState(false);
-
+    const [clicked, setclicked] = useState(false);
+    const [enteredtext, setenteredtext] = useState('');
+    const [search, setsearch] = useState('');
+    
     const onHover = (index) => {
         setHover(!Hover);
         setid(index);
-
+        
         if(!Hover){
             setclicked(false);
         }
     }
-
+    
     const nextpage = () => {
         (currentPage < lastPage) ? 
         setCurrentPage(currentPage+1) : 
         setCurrentPage(currentPage);
     }
-
+    
     const copy = (data) =>  {
         navigator.clipboard.writeText(data);
         setclicked(true);    
     }
+    
+    const changesearch = (event) => {
+        setenteredtext(event.target.value);
+        console.log(event.target.value);
+    }
+    const ans = (enteredtext) =>{
+        arr = [...slogan.filter(word => word.includes(enteredtext))];
+        console.log(arr);
 
+        setsearch(enteredtext);
+    }
+    
     return (
         <div className="maincontent">
             <div className="maincontent_body">
@@ -74,15 +89,27 @@ const Maincontent = () => {
                 <div className="maincontent_Search_heading">
                     Word for your slogan
                 </div>
-                <input type="text" className="maincontent_searchbox" />
+                <input type="text" 
+                    className="maincontent_searchbox" 
+                    value={enteredtext}
+                    onChange={changesearch}
+                />
                 <br />
-                <Button className="maincontent_generate_button">Generate slogans</Button>
+                <Button className="maincontent_generate_button"
+                     onClick={()=>{ans(enteredtext)}}
+                
+                >Generate slogans</Button>
                 <div className="maincontent_line"></div>
                 <br />
                 <div className='maincontent_search_result'>
-                    <div className='search_result'>
-                        We have generated {slogan.length} slogans for "text"
-                    </div>
+                    {
+                        arr ? 
+                        <div className='search_result'>
+                            We have generated {arr.length} slogans for "{search}"
+                        </div>
+                        :
+                        ""
+                    }
                     <Button>Download</Button>
                 </div>
                 <br />
