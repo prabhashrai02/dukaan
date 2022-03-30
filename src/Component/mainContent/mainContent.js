@@ -38,6 +38,19 @@ const Maincontent = () => {
     const currentPosts = slogan.slice(indexOfFirstPost, indexOfLastPost);
     const paginate = pageNumber => setCurrentPage(pageNumber);
     
+    const [Hover, setHover] = useState(false);
+    const [id, setid] = useState('');
+    const [clicked, setclicked]= useState(false);
+
+    const onHover = (index) => {
+        setHover(!Hover);
+        setid(index);
+
+        if(!Hover){
+            setclicked(false);
+        }
+    }
+
     const nextpage = () => {
         (currentPage < lastPage) ? 
         setCurrentPage(currentPage+1) : 
@@ -46,6 +59,7 @@ const Maincontent = () => {
 
     const copy = (data) =>  {
         navigator.clipboard.writeText(data);
+        setclicked(true);    
     }
 
     return (
@@ -75,8 +89,25 @@ const Maincontent = () => {
                 <div className="maincontent_data_box">
                     {
                         currentPosts.map((data, index) =>
-                        <li key={index} onClick={()=>copy(data)} className="maincontent_data">
-                                {data}
+                            <li key={index} onClick={()=>copy(data)} 
+                                onMouseEnter={()=>onHover(index)}  
+                                onMouseLeave={()=>onHover(index)}  
+                                tabIndex='-3'
+                            >
+                                
+                                <div className="maincontent_data">
+                                    {data}
+                                </div>
+
+                                {
+                                    Hover && index===id ? 
+
+                                    <div className='maincontent_alert'>
+                                        {clicked ? "Copied" : "Click to copy text"}
+                                    </div>
+                                    :
+                                    <div></div>
+                                }
                             </li>
                         )
                     }

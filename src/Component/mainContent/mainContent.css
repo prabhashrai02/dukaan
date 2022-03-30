@@ -161,6 +161,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .maincontent_data {
@@ -174,6 +175,19 @@
     background: #F2F2F2;
     border-radius: 4px;
     height: 60px;
+}
+
+.maincontent_alert {
+    position: relative;
+    display: flex;
+    height: 28px;
+    width: 150px;
+    justify-content: center;
+    color: white;
+
+/* colors/black/30 */
+    background: #4D4D4D;
+    border-radius: 4px;
 }
 
 .maincontent_pagination {
