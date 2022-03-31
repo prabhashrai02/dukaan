@@ -30,6 +30,7 @@ const Maincontent = () => {
     
     
     let arr= slogan;
+    const [size, setsize] = useState(arr.length);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
     
@@ -68,13 +69,14 @@ const Maincontent = () => {
     
     const changesearch = (event) => {
         setenteredtext(event.target.value);
-        console.log(event.target.value);
+        // console.log(event.target.value);
     }
     const ans = (enteredtext) =>{
         arr = [...slogan.filter(word => word.includes(enteredtext))];
         console.log(arr);
 
         setsearch(enteredtext);
+        setsize(arr.length);
     }
     
     return (
@@ -105,7 +107,7 @@ const Maincontent = () => {
                     {
                         arr ? 
                         <div className='search_result'>
-                            We have generated {arr.length} slogans for "{search}"
+                            We have generated {size} slogans for "{search}"
                         </div>
                         :
                         ""
