@@ -18,7 +18,7 @@ ul {
 }
 
 .pagination_not_selected {
-    margin: 0 10px;
+    padding: 0 2px;
     cursor: pointer;
     color: #146EB4;
 }

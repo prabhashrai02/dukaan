@@ -4,7 +4,7 @@ import './pagination.css';
 const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage, lastPage }) => {
   const pageNumbers = [];
 
-  for (let i = currentPage-2; i <= Math.ceil(totalPosts / postsPerPage) && i<=currentPage+2; i++) {
+  for (let i = currentPage-1; i <= Math.ceil(totalPosts / postsPerPage) && i<=currentPage+1; i++) {
     if(i>0){
       pageNumbers.push(i);
     }
@@ -24,12 +24,12 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage, lastPage 
           </li>
         ))}
         {
-          currentPage + 2 < lastPage && <div className='page_next' onClick={hello}>&hellip;</div>
+          currentPage + 1 < lastPage && <div className='page_next' onClick={hello}>&hellip;</div>
         }
 
         {
             <a onClick={() => paginate(lastPage)} className='page_link'>
-              { currentPage !== lastPage && currentPage + 2 < lastPage && <div className='pagination_not_selected'>{lastPage}</div> }
+              { currentPage !== lastPage && currentPage + 1 < lastPage && <div className='pagination_not_selected'>{lastPage}</div> }
             </a>
         }
       </ul>
