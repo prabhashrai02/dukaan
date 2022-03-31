@@ -162,12 +162,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
 }
 
 .maincontent_data {
     cursor: pointer;
     border-radius: 4px;
-    width: max-content;
+    width: 352px;
     display: flex;
     margin: 10px;
     padding: 10px;
