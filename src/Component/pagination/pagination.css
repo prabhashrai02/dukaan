@@ -6,7 +6,7 @@ ul {
 }
 
 .pagination_selected {
-    margin: 0 10px;
+    margin: 0 5px;
     cursor: pointer;
     background-color: #146EB4;
     color: white;
@@ -18,7 +18,7 @@ ul {
 }
 
 .pagination_not_selected {
-    padding: 0 2px;
+    padding: 0 15px;
     cursor: pointer;
     color: #146EB4;
 }
