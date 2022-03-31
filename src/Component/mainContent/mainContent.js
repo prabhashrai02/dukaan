@@ -131,6 +131,8 @@ const Maincontent = () => {
                         postsPerPage={postsPerPage}
                         totalPosts={arr.length}
                         paginate={paginate}
+                        currentPage={currentPage}
+                        lastPage={lastPage}
                     />
                     <Button onClick={nextpage}>Next &gt;</Button>
                 </div>
