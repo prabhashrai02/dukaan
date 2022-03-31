@@ -29,7 +29,7 @@ const Maincontent = () => {
     ]
     
     
-    let arr= slogan;
+    const [arr, setarr] = useState(slogan);
     const [size, setsize] = useState(arr.length);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
@@ -72,12 +72,17 @@ const Maincontent = () => {
         // console.log(event.target.value);
     }
     const ans = (enteredtext) =>{
-        arr = [...slogan.filter(word => word.includes(enteredtext))];
+        setarr([...slogan.filter(word => word.includes(enteredtext))])
         console.log(arr);
 
         setsearch(enteredtext);
-        setsize(arr.length);
     }
+    
+    useEffect (
+        () => {
+            setsize(arr.length);
+        }, [arr]
+    )
     
     return (
         <div className="maincontent">
