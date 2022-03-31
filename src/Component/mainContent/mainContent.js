@@ -1,34 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Button from '../button/button';
 import Pagination from '../pagination/pagination';
+import slogan from '../dummyData/dummyData';
 import './mainContent.css';
 
 const Maincontent = () => {
 
-    const slogan = [
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "coziness building for tomorrow",
-        "coziness building for tomorrow",
-        "coziness building for tomorrow",
-        "coziness building for tomorrow",
-        "coziness building for tomorrow",
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "There is no Sore it will Not Heal, No cool it will not Subdue.",
-        "coziness building for tomorrow",
-        "coziness building for tomorrow",
-        "coziness building for tomorrow",
-        "coziness building for tomorrow",
-        "Prabhash"
-    ]
-    
-    
     const [arr, setarr] = useState(slogan);
     const [size, setsize] = useState(arr.length);
     const [currentPage, setCurrentPage] = useState(1);
