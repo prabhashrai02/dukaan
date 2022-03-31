@@ -151,7 +151,7 @@ const Maincontent = () => {
                 <div className='maincontent_pagination'>
                     <Pagination
                         postsPerPage={postsPerPage}
-                        totalPosts={slogan.length}
+                        totalPosts={arr.length}
                         paginate={paginate}
                     />
                     <Button onClick={nextpage}>Next &gt;</Button>
