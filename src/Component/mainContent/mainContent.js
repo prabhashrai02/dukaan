@@ -101,12 +101,13 @@ const Maincontent = () => {
                     {
                         currentPosts.map((data, index) =>
                             <li key={index} onClick={()=>copy(data)} 
-                                onMouseEnter={()=>onHover(index)}  
-                                onMouseLeave={()=>onHover(index)}  
-                                tabIndex='-3'
+                            tabIndex='-3'
                             >
                                 
-                                <div className="maincontent_data">
+                                <div className="maincontent_data"
+                                    onMouseEnter={()=>onHover(index)}  
+                                    onMouseLeave={()=>onHover(index)}      
+                                >
                                     {data}
                                 </div>
 
