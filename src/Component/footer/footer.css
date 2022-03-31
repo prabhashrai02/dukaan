@@ -37,6 +37,11 @@
     width: 100%;
     margin-top: 50px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.flex_footer > div {
+    margin: 0 20px;
 }
 
 .footer_page:hover {
@@ -64,4 +69,5 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
