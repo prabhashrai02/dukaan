@@ -54,7 +54,7 @@ const Maincontent = () => {
     }
     const ans = (enteredtext) =>{
         setarr([...slogan.filter(word => word.includes(enteredtext))])
-        console.log(arr);
+        // console.log(arr);
 
         setsearch(enteredtext);
     }
