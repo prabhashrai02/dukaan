@@ -15,7 +15,6 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage, lastPage 
   }
 
   return (
-    <div>
       <ul className='pagination'>
         {pageNumbers.map(number => (
           <li key={number} className='page_item'>
@@ -34,7 +33,6 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage, lastPage 
             </a>
         }
       </ul>
-    </div>
   );
 };
 

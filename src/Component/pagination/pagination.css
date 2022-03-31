@@ -1,5 +1,6 @@
 ul {
     display: flex;
+    padding: 0;
     /* overflow-x: scroll; */
     list-style-type: none;
 }
@@ -9,7 +10,7 @@ ul {
     cursor: pointer;
     background-color: #146EB4;
     color: white;
-    padding: 2px;
+    padding: 0 2px;
     /* width: 140%; */
     /* height: 140%; */
     text-align: center;
