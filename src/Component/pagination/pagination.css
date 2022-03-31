@@ -7,18 +7,29 @@ ul {
 
 .pagination_selected {
     margin: 0 5px;
+    padding-top: 3px;
     cursor: pointer;
     background-color: #146EB4;
     color: white;
-    padding: 0 2px;
-    /* width: 140%; */
-    /* height: 140%; */
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
     border-radius: 50%;
+    width: 30px;
+    height: 27px;
+    /* text-align: center; */
+    
 }
 
 .pagination_not_selected {
-    padding: 0 15px;
+    margin: 0 5px;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    border-radius: 50%;
+    width: 30px;
+    height: 27px;
     cursor: pointer;
     color: #146EB4;
 }
