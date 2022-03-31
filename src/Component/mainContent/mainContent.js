@@ -20,17 +20,18 @@ const Maincontent = () => {
     
     const [Hover, setHover] = useState(false);
     const [id, setid] = useState('');
-    const [clicked, setclicked] = useState(false);
+    const [clicked, setclicked] = useState('');
     const [enteredtext, setenteredtext] = useState('');
     const [search, setsearch] = useState('');
     
-    const onHover = (index) => {
-        setHover(!Hover);
+    const onHoverEnter = (index) => {
+        setHover(true);
         setid(index);
-        
-        if(!Hover){
-            setclicked(false);
-        }
+    }
+
+    const onHoverLeave = () => {
+        setHover(false);
+        setclicked('');
     }
     
     const nextpage = () => {
@@ -39,9 +40,12 @@ const Maincontent = () => {
         setCurrentPage(currentPage);
     }
     
-    const copy = (data) =>  {
+    const copy = (data, index) =>  {
         navigator.clipboard.writeText(data);
-        setclicked(true);    
+        if(index===clicked){
+            setclicked('');
+        }
+        setclicked(index);
     }
     
     const changesearch = (event) => {
@@ -100,13 +104,14 @@ const Maincontent = () => {
                 <div className="maincontent_data_box">
                     {
                         currentPosts.map((data, index) =>
-                            <li key={index} onClick={()=>copy(data)} 
+                            <li key={index} 
                             tabIndex='-3'
                             >
                                 
                                 <div className="maincontent_data"
-                                    onMouseEnter={()=>onHover(index)}  
-                                    onMouseLeave={()=>onHover(index)}      
+                                    onMouseEnter={()=>onHoverEnter(index)}  
+                                    onMouseLeave={()=>onHoverLeave()}
+                                    onClick={()=>copy(data, index)}    
                                 >
                                     {data}
                                 </div>
@@ -115,7 +120,7 @@ const Maincontent = () => {
                                     Hover && index===id ? 
 
                                     <div className='maincontent_alert'>
-                                        {clicked ? "Copied" : "Click to copy text"}
+                                        {clicked===index ? "Copied" : "Click to copy text"}
                                     </div>
                                     :
                                     <div></div>
