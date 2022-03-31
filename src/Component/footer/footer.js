@@ -63,7 +63,10 @@ const Footer = () => {
                     <div>
                         Dukaan 2020, All rights reserved
                     </div>
-                    <img src={made} alt="Made in India"></img>
+                    <div className="footer_made_in">
+                        Made in
+                        <img className="footer_made_in_img" src={made} alt="Made in India"></img>
+                    </div>
                 </div>
             </div>
         </div>
