@@ -29,7 +29,6 @@
 
 .maincontent_heading {
     position: relative;
-    height: 42px;
     
     font-family: 'Galano Grotesque';
     font-style: normal;
@@ -74,7 +73,7 @@
 
 .maincontent_searchbox {
     position: relative;
-    width: 40%;
+    width: 60%;
     height: 48px;
     font-size: larger;
 
