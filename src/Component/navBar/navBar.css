@@ -12,7 +12,8 @@
 }
 
 .logo {
-    display: flex;  
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     align-items: center;
     justify-content: space-between;
@@ -27,6 +28,7 @@
 }
 
 .signin {
+    cursor: pointer;
     position: relative;
     height: 26px;
     /* left: 1011px;
@@ -46,6 +48,7 @@
 }
 
 .dukaan_pc {
+    cursor: pointer;
     position: relative;
     width: 177px;
     height: 50px;
