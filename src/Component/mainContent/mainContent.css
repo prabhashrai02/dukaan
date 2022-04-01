@@ -54,7 +54,8 @@
 
     /* colors/black/30 */
     color: #4D4D4D;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .maincontent_Search_heading {
@@ -63,6 +64,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 5px;
     /* identical to box height, or 150% */
 
 
@@ -110,11 +112,13 @@
 }
 
 .maincontent_search_result {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* Heading/H5|Medium */
 
-    font-family: 'Galano Grotesque';
+    font-family: 'Galano Grotesque semi-heading';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -129,7 +133,8 @@
 
 .maincontent_search_result > Button {
     cursor: pointer;
-    height: 36px;
+    height: 40px;
+    width: 20%;
     border-color: #146EB4;
     background-color: transparent;
     border-radius: 8px;
