@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="logo">
                 <img src={logo} alt="Dukaan logo"/>
-                <div>
+                <div className="nav_button">
                     <Button className="signin">Sign In</Button>
                     <Button className="dukaan_pc">Dukaan for PC</Button>
                 </div>

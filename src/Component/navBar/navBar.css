@@ -71,3 +71,11 @@
     /* colors/primary/blue */
     color: #146EB4;
 }
+
+
+@media only screen and (max-width: 375px) {
+    .nav_button > Button{
+        position: relative;
+        margin: 10px 0;
+    }
+}
