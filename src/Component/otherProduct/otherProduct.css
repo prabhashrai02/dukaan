@@ -1,21 +1,26 @@
 .otherproduct {
     /* width: 1140px; */
     /* margin: 0 auto; */
+    margin: 5% 0;
 }
 
 .other_product {
     display: flex;
     flex-wrap: wrap;
+    /* width: 80%; */
     /* flex-wrap:wrap; */
-    /* justify-content: space-around; */
+    justify-content: space-between;
+    margin: 0 10%;
 }
 
 .other_product_each {
-    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .otherproduct_head {
-    margin: 20px 20px;
+    margin: 3% 10%;
     /* Office culture */
     position: relative;
     /* height: 42px; */
@@ -55,12 +60,14 @@
 
 /* colors/black/12 */
     color: #1A181E;
+    margin: 2% 0;
 }
 
 .other_product_description{
     position: relative;
     width: 352px;
-    margin-bottom: 10px;
+    margin-top: 2%;
+    margin-bottom: 5%;
     /* height: 72px; */
     /* left: 160px; */
     
@@ -69,7 +76,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 28px;
     
     /* colors/black/30 */
     color: #4D4D4D;
