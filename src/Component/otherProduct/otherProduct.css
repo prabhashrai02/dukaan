@@ -82,14 +82,14 @@
     color: #4D4D4D;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 376px) {
     .other_product {
         width: 100%;
         margin: 0;
     }
 
     .other_product_each {
-        margin: 0 10px;
+        margin: 0 10%;
     }
 
     .other_product_privacy {
