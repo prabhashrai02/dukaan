@@ -7,7 +7,7 @@
 .other_product {
     display: flex;
     flex-wrap: wrap;
-    /* width: 80%; */
+    width: 80%;
     /* flex-wrap:wrap; */
     justify-content: space-between;
     margin: 0 10%;
@@ -80,4 +80,23 @@
     
     /* colors/black/30 */
     color: #4D4D4D;
+}
+
+@media only screen and (max-width: 320px) {
+    .other_product {
+        width: 100%;
+        margin: 0;
+    }
+
+    .other_product_each {
+        margin: 0 10px;
+    }
+
+    .other_product_privacy {
+        width: 300px;
+    }
+
+    .other_product_description {
+        width: 300px;
+    }
 }
