@@ -1,8 +1,9 @@
 .footer {
+    width: 100%;
     display: flex;
     position: relative;
     justify-content: space-around;
-    padding-bottom: 10px;
+    padding-bottom: 3%;
     /* flex-wrap: wrap; */
     /* left: 0%;
     right: 0%; */
