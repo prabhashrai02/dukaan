@@ -17,6 +17,8 @@
 
 .bodyfunction_element {
     text-align: center;
+    position: relative;
+    padding: 10px;
 }
 
 .bodyfunction_element_head {
@@ -46,4 +48,10 @@
 
 /* colors/black/30 */
     color: #4D4D4D;
+}
+
+@media only screen and (max-width: 320px) {
+    .bodyfunction_element_text {
+        width: 300px;
+    }
 }
