@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/dukaan/static/css/main.5444bdd1.css",
+    "main.js": "/dukaan/static/js/main.eff5890d.js",
+    "static/js/787.5cd749ce.chunk.js": "/dukaan/static/js/787.5cd749ce.chunk.js",
+    "static/media/galanogrotesque-medium.otf": "/dukaan/static/media/galanogrotesque-medium.b97d8085339bb06a20e3.otf",
+    "static/media/galanogrotesque-semibold.otf": "/dukaan/static/media/galanogrotesque-semibold.221148feb6919a5074ea.otf",
+    "static/media/galanogrotesque-regular.otf": "/dukaan/static/media/galanogrotesque-regular.5f03954d44485fc4fb03.otf",
+    "static/media/MADE_IN_INDIA.png": "/dukaan/static/media/MADE_IN_INDIA.2cafc55030d88566f471.png",
+    "static/media/Domain_Generator.png": "/dukaan/static/media/Domain_Generator.bfeb5d7c6ae129123f19.png",
+    "static/media/white.svg": "/dukaan/static/media/white.af10462225cd56c820030078c377a93a.svg",
+    "static/media/logo.svg": "/dukaan/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Standout.svg": "/dukaan/static/media/Standout.04664ab2ea81ff00a500188792a3dd79.svg",
+    "index.html": "/dukaan/index.html",
+    "static/media/Search.svg": "/dukaan/static/media/Search.0c8cda6d78db936f42844d93ebad6198.svg",
+    "static/media/Select.svg": "/dukaan/static/media/Select.334bfc106afd04db6b3fe33fa8779eac.svg",
+    "main.5444bdd1.css.map": "/dukaan/static/css/main.5444bdd1.css.map",
+    "main.eff5890d.js.map": "/dukaan/static/js/main.eff5890d.js.map",
+    "787.5cd749ce.chunk.js.map": "/dukaan/static/js/787.5cd749ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5444bdd1.css",
+    "static/js/main.eff5890d.js"
+  ]
+}
